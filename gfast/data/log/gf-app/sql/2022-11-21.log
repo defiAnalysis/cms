@@ -49,3 +49,6 @@ Stack:
 2022-11-21 17:01:34.598 [DEBU] [5571 ms] [default] SHOW FULL COLUMNS FROM `sys_job` 
 2022-11-21 17:01:36.793 [DEBU] [2194 ms] [default] SELECT `job_id`,`job_name`,`job_params`,`job_group`,`invoke_target`,`cron_expression`,`misfire_policy`,`concurrent`,`status`,`create_by`,`update_by`,`remark`,`created_at`,`updated_at`,`deleted_at` FROM `sys_job` WHERE (`status`=0) AND `deleted_at` IS NULL 
 2022-11-21 17:01:41.874 [DEBU] [5079 ms] [default] UPDATE `sys_job` SET `status`=0 WHERE `job_id`=8 
+2022-11-21 19:26:24.745 [DEBU] [342 ms] [default] SHOW FULL COLUMNS FROM `sys_job` 
+2022-11-21 19:26:24.871 [DEBU] [124 ms] [default] SELECT `job_id`,`job_name`,`job_params`,`job_group`,`invoke_target`,`cron_expression`,`misfire_policy`,`concurrent`,`status`,`create_by`,`update_by`,`remark`,`created_at`,`updated_at`,`deleted_at` FROM `sys_job` WHERE (`status`=0) AND `deleted_at` IS NULL 
+2022-11-21 19:26:25.001 [DEBU] [129 ms] [default] UPDATE `sys_job` SET `status`=0 WHERE `job_id`=8 
