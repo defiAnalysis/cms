@@ -1,0 +1,13 @@
+2022-11-21 16:58:04.442 [ERRO] Error 1045: Access denied for user 'root'@'ec2-18-162-243-16.ap-east-1.compute.amazonaws.com' (using password: YES), SELECT `JobId`,`JobName`,`JobParams`,`JobGroup`,`InvokeTarget`,`CronExpression`,`MisfirePolicy`,`Concurrent`,`Status`,`CreateBy`,`UpdateBy`,`Remark`,`CreatedAt`,`UpdatedAt`,`DeletedAt` FROM `sys_job` WHERE `status`=0
+Stack:
+1.  gfast/task.init.0
+    /Users/hayden/dev/gopath/Oort/CMS/cms/gfast/task/bind_function.go:37
+ 
+2022-11-21 16:58:04 [INFO] /Users/hayden/dev/gopath/pkg/mod/github.com/tiger1103/gtoken@v1.4.8/gtoken/gtoken_group.go:17: [GToken][params:{"AuthExcludePaths":"[\"/login\"]","AuthFailMsg":"登录超时，请重新登录","AuthPaths":"","CacheKey":"GToken:","CacheMode":1,"EncryptKey":"koi29a83idakguqjq29asd9asd8a7jhq","LoginPath":"/login","LogoutPath":"/logout","MiddlewareType":1,"MultiLogin":true,"Timeout":10800000,"TokenDelimiter":"_"}]start...  
+2022-11-21 16:59:32.042 [ERRO] Error 1146: Table 'luckbuydb.sys_job' doesn't exist, SELECT `JobId`,`JobName`,`JobParams`,`JobGroup`,`InvokeTarget`,`CronExpression`,`MisfirePolicy`,`Concurrent`,`Status`,`CreateBy`,`UpdateBy`,`Remark`,`CreatedAt`,`UpdatedAt`,`DeletedAt` FROM `sys_job` WHERE `status`=0
+Stack:
+1.  gfast/task.init.0
+    /Users/hayden/dev/gopath/Oort/CMS/cms/gfast/task/bind_function.go:37
+ 
+2022-11-21 16:59:32 [INFO] /Users/hayden/dev/gopath/pkg/mod/github.com/tiger1103/gtoken@v1.4.8/gtoken/gtoken_group.go:17: [GToken][params:{"AuthExcludePaths":"[\"/login\"]","AuthFailMsg":"登录超时，请重新登录","AuthPaths":"","CacheKey":"GToken:","CacheMode":1,"EncryptKey":"koi29a83idakguqjq29asd9asd8a7jhq","LoginPath":"/login","LogoutPath":"/logout","MiddlewareType":1,"MultiLogin":true,"Timeout":10800000,"TokenDelimiter":"_"}]start...  
+2022-11-21 17:01:41 [INFO] /Users/hayden/dev/gopath/pkg/mod/github.com/tiger1103/gtoken@v1.4.8/gtoken/gtoken_group.go:17: [GToken][params:{"AuthExcludePaths":"[\"/login\"]","AuthFailMsg":"登录超时，请重新登录","AuthPaths":"","CacheKey":"GToken:","CacheMode":1,"EncryptKey":"koi29a83idakguqjq29asd9asd8a7jhq","LoginPath":"/login","LogoutPath":"/logout","MiddlewareType":1,"MultiLogin":true,"Timeout":10800000,"TokenDelimiter":"_"}]start...  
