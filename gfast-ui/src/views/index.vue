@@ -4,26 +4,38 @@
       <el-row>
         <el-col :span="24">
           <el-card class="box-card">
-              <p>领取阿里云通用云产品优惠券</p>
-              <p><a target="_blank" class="text-info" href="https://www.aliyun.com/minisite/goods?userCode=fcor2omk">https://www.aliyun.com/minisite/goods?userCode=fcor2omk</a></p>
-              <p>领取腾讯云通用云产品优惠券</p>
-              <p><a target="_blank" class="text-info" href="https://cloud.tencent.com/act/cps/redirect?redirect=1062&cps_key=20b1c3842f74986b2894e2c5fcde7ea2&from=console">https://cloud.tencent.com/act/cps/redirect?redirect=1062&cps_key=20b1c3842f74986b2894e2c5fcde7ea2&from=console</a></p>
+            <p>领取阿里云通用云产品优惠券</p>
+            <p>
+              <a
+                target="_blank"
+                class="text-info"
+                href="https://www.aliyun.com/minisite/goods?userCode=fcor2omk"
+                >https://www.aliyun.com/minisite/goods?userCode=fcor2omk</a
+              >
+            </p>
+            <p>领取腾讯云通用云产品优惠券</p>
+            <p>
+              <a
+                target="_blank"
+                class="text-info"
+                href="https://cloud.tencent.com/act/cps/redirect?redirect=1062&cps_key=20b1c3842f74986b2894e2c5fcde7ea2&from=console"
+                >https://cloud.tencent.com/act/cps/redirect?redirect=1062&cps_key=20b1c3842f74986b2894e2c5fcde7ea2&from=console</a
+              >
+            </p>
           </el-card>
         </el-col>
       </el-row>
     </div>
-<!--    <panel-group @handleSetLineChartData="handleSetLineChartData" />-->
-
-
+    <!--    <panel-group @handleSetLineChartData="handleSetLineChartData" />-->
   </div>
 </template>
 
 <script>
-import PanelGroup from './dashboard/PanelGroup'
-import LineChart from './dashboard/LineChart'
-import RaddarChart from './dashboard/RaddarChart'
-import PieChart from './dashboard/PieChart'
-import BarChart from './dashboard/BarChart'
+import PanelGroup from "./dashboard/PanelGroup";
+import LineChart from "./dashboard/LineChart";
+import RaddarChart from "./dashboard/RaddarChart";
+import PieChart from "./dashboard/PieChart";
+import BarChart from "./dashboard/BarChart";
 
 const lineChartData = {
   newVisitis: {
@@ -42,10 +54,10 @@ const lineChartData = {
     expectedData: [130, 140, 141, 142, 145, 150, 160],
     actualData: [120, 82, 91, 154, 162, 140, 130]
   }
-}
+};
 
 export default {
-  name: 'Index',
+  name: "Index",
   components: {
     PanelGroup,
     LineChart,
@@ -56,42 +68,46 @@ export default {
   data() {
     return {
       lineChartData: lineChartData.newVisitis
-    }
+    };
   },
   methods: {
     handleSetLineChartData(type) {
-      this.lineChartData = lineChartData[type]
+      this.lineChartData = lineChartData[type];
     }
   }
-}
+};
 </script>
 
 <style lang="scss" scoped>
-
-.dashboard-promote .el-row{
+.dashboard-promote .el-row {
   margin-bottom: 20px;
   font-size: 14px;
 }
-.dashboard-promote .el-row .jz{
+.dashboard-promote .el-row .jz {
   height: 500px;
 }
-.dashboard-promote .el-row .kj{
+.dashboard-promote .el-row .kj {
   height: 300px;
 }
-.dashboard-promote .el-row .xx{
+.dashboard-promote .el-row .xx {
   height: 200px;
 }
 
-.git-res{
+.git-res {
   margin-top: 20px;
 }
-.git-res .el-link{
+.git-res .el-link {
   margin-right: 30px;
 }
 
-ul,li{ padding:0;margin:0;list-style:none}
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
 
-.product li{
+.product li {
   margin-bottom: 20px;
   float: left;
   width: 150px;
@@ -109,7 +125,7 @@ ul,li{ padding:0;margin:0;list-style:none}
   }
 }
 
-@media (max-width:1024px) {
+@media (max-width: 1024px) {
   .chart-wrapper {
     padding: 8px;
   }

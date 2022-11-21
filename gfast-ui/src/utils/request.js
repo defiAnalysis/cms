@@ -8,15 +8,15 @@ axios.defaults.headers["Content-Type"] = "application/json;charset=utf-8";
 // 创建axios实例
 const service = axios.create({
   // axios中请求配置有baseURL选项，表示请求URL公共部分
-  baseURL: process.env.VUE_APP_BASE_API,
+  // baseURL: process.env.VUE_APP_BASE_API,
   // baseURL: "https://cmsapi.alad.club/",
-  // baseURL: "http://192.168.30.10:9002/",
+  baseURL: "http://localhost:8200",
   // 超时
-  timeout: 180000,
+  timeout: 180000
 });
 // request拦截器
 service.interceptors.request.use(
-  (config) => {
+  config => {
     // 是否需要设置 token
     const isToken = (config.headers || {}).isToken === false;
     if (getToken() && !isToken) {
@@ -24,7 +24,7 @@ service.interceptors.request.use(
     }
     return config;
   },
-  (error) => {
+  error => {
     console.log(error);
     Promise.reject(error);
   }
@@ -32,7 +32,7 @@ service.interceptors.request.use(
 
 // 响应拦截器
 service.interceptors.response.use(
-  (res) => {
+  res => {
     // 未设置状态码则默认成功状态
     const code = res.data.code || 0;
     // 获取错误信息
@@ -44,7 +44,7 @@ service.interceptors.response.use(
         {
           confirmButtonText: "重新登录",
           cancelButtonText: "取消",
-          type: "warning",
+          type: "warning"
         }
       ).then(() => {
         store.dispatch("LogOut").then(() => {
@@ -54,24 +54,24 @@ service.interceptors.response.use(
     } else if (code === 500) {
       Message({
         message: message,
-        type: "error",
+        type: "error"
       });
       return Promise.reject(new Error(message));
     } else if (code !== 0) {
       Notification.error({
-        title: message,
+        title: message
       });
       return Promise.reject(res.data);
     } else {
       return res.data;
     }
   },
-  (error) => {
+  error => {
     console.log("err" + error);
     Message({
       message: error.message,
       type: "error",
-      duration: 5 * 1000,
+      duration: 5 * 1000
     });
     return Promise.reject(error);
   }
