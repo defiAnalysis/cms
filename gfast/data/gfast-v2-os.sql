@@ -623,7 +623,7 @@ CREATE TABLE `sys_user`  (
 
 LOCK TABLES `sys_user` WRITE;
 /*!40000 ALTER TABLE `sys_user` DISABLE KEYS */;
-INSERT INTO `sys_user` VALUES (1,'admin','13578342363','超级管理员',0,'542a6e44dbac171f260fc4a032cd5522','dlqVVBTADg',1,'yxh669@qq.com',1,'https://yxh-1301841944.cos.ap-chongqing.myqcloud.com/gfast/2021-07-19/ccwpeuqz1i2s769hua.jpeg',101,'',1,'asdasfdsaf大发放打发士大夫发按时','描述信息','18611111111','[::1]','2021-07-19 14:28:38','2021-06-22 17:58:00','2021-07-12 22:07:44',NULL);
+INSERT INTO `sys_user` VALUES (1, 'admin', '13578342363', '超级管理员', 0, '542a6e44dbac171f260fc4a032cd5522', '', 'dlqVVBTADg', 1, 'yxh669@qq.com', 1, 'https://yxh-1301841944.cos.ap-chongqing.myqcloud.com/gfast/2021-07-19/ccwpeuqz1i2s769hua.jpeg', 101, '', 1, 'asdasfdsaf大发放打发士大夫发按时', '描述信息', '18611111111', '[::1]', '2022-08-23 14:49:19', '2021-06-22 17:58:00', '2021-07-12 22:07:44', NULL);
 /*!40000 ALTER TABLE `sys_user` ENABLE KEYS */;
 UNLOCK TABLES;
 
